@@ -1,12 +1,14 @@
 {
   "name": "brokenbrain",
   "version": "1.0.0",
-  "main": "node_modules/expo/AppEntry.js",
+  "main": "App.js",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d ./"
   },
   "dependencies": {
     "@react-navigation/native-stack": "^6.9.12",
